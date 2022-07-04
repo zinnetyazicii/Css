@@ -1,0 +1,59 @@
+Statik konumlu elemanlar üst, alt, sol ve sağ özelliklerden etkilenmez.
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+
+
+ Relative üst, sağ, alt ve sol özelliklerinin ayarlanması, normal konumundan uzağa ayarlanmasına neden olacaktır. Diğer içerik, öğenin bıraktığı boşluğa sığacak şekilde ayarlanmayacaktır.
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+
+
+Bir öğe position: fixed;görünüm alanına göre konumlandırılır, yani sayfa kaydırılsa bile her zaman aynı yerde kalır. Öğeyi konumlandırmak için üst, sağ, alt ve sol özellikler kullanılır.
+sağ alttaki nasıl yadımcı olabilirim kutusu gibi
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+
+
+
+İle bir öğe, position: absolute;en yakın konumlandırılmış ataya göre konumlanmıştır (sabit gibi, görüntü alanına göre konumlanmak yerine).
+Yine de; Mutlak konumlandırılmış bir öğenin konumlandırılmış ataları yoksa, belge gövdesini kullanır ve sayfa kaydırma ile birlikte hareket eder.
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+
+İle bir öğe position: sticky;, kullanıcının kaydırma konumuna göre konumlandırılır.
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
